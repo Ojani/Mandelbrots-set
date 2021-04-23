@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mandelbrot's set</title>
+    <script defer src="https://unpkg.com/gpu.js@latest/dist/gpu-browser.min.js"></script>
+    <script defer src="app.js"></script>
+</head>
+<body>
+    <style>
+        body {
+            background: #333;
+            margin: 0;
+        }
+
+        canvas {
+            image-rendering: crisp-edges;
+            transform: translateX(-50%);
+            max-width: 100vw;
+            margin-left: 50%;
+        }
+
+        input, label {
+            transform: translateX(-50%);
+            font-family: arial;
+            margin-left: 50%;
+            display: block;
+
+        }
+
+        label {
+            text-align: center;
+            color: white;
+        }
+    </style>
+
+    <label for="iters">Iterations</label>
+    <input id="iters" type="number" value="100">
+
+</body>
+</html>
