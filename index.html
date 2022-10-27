@@ -34,10 +34,32 @@
             text-align: center;
             color: white;
         }
+        
+        .controls {
+            margin: 0 auto 0 5em;
+            position: absolute;
+            color: white;
+            width: 20em;
+            top: 5em;
+        }
+
+        .controls > span {
+            margin-right: 1ch;
+        }
     </style>
 
     <label for="iters">Iterations</label>
     <input id="iters" type="number" value="100">
+    
+    <div class="controls">
+        <h2 class="controlsTitle">Controls</h2>
+        <span>]</span> Zoom in <br>
+        <span>[</span> Zoom out <br>
+        <span>▲</span> Move up <br>
+        <span>▼</span> Move down <br>
+        <span>◄</span> Move left <br>
+        <span>►</span> Move right <br>
+    </div>
 
 </body>
 </html>
